@@ -1,41 +1,62 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark ccs-navbar">
-  <a class="navbar-brand" href="#">CarService</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ccs-navbar-ul">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Trang chủ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Giới thiệu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home" >Dịch vụ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Bảng giá</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Tin tức</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Liên hệ</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            English
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">日本語</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ccs-navbar ">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <a class="navbar-brand" href="#">CarService</a>
+    </div>
+    <div class="col-md-8">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ccs-navbar-ul">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/home">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/intro">Giới thiệu</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="/home" >Dịch vụ</a>
+              </li> -->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <div class="dropbtn">Dịch vụ</div>
+                  <div class="dropdown-content">
+                    <a href="#">Bảo dưỡng xe</a>
+                    <a href="#">Nâng cấp xe</a>
+                    <a href="#">Cho thuê xe tự lái</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Bảng giá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/home">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact">Liên hệ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    English
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">日本語</a>
+                  </div>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" RouterLink="/signin" >Signin</a>
+                </li>
+        
+            </ul>
+        
           </div>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" RouterLink="/signin" >Signin</a>
-        </li>
-
-    </ul>
-
+      </div>
   </div>
+</div>
+
+
+ 
+
+ 
 </nav>

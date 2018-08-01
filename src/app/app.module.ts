@@ -12,6 +12,8 @@ import { SigninComponent } from './pages/signin/signin.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { IntroComponent } from './pages/intro/intro.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    SigninComponent
+    SigninComponent,
+    IntroComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
