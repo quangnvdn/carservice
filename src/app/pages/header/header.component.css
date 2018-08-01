@@ -1,3 +1,6 @@
-.ccs-navbar{
-    background-color: #2d3246;
+.bg-dark{
+    height: 75px;
+}
+.navbar-nav{
+    float: right;
 }

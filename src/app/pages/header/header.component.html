@@ -1,34 +1,40 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ccs-navbar">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">CarService</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ccs-navbar-ul">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/home">Trang chủ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" routerLink="/home">Giới thiệu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" routerLink="/home" >Dịch vụ</a>
       </li>
-      
-    </ul>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Bảng giá</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Tin tức</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Liên hệ</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">日本語</a>
+          </div>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" RouterLink="/signin" >Signin</a>
+        </li>
 
-    <ul class="navbar-nav ccs-navbar">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">日本語</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" RouterLink="/signin" >Signin</a>
-          </li>
     </ul>
 
   </div>
