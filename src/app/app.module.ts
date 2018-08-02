@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroComponent } from './pages/intro/intro.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AgmCoreModule } from '@agm/core';   // @agm/core
+import { AgmDirectionModule } from 'agm-direction';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,11 @@ import { ContactComponent } from './pages/contact/contact.component';
     RouterModule,
     NgbModule,
     NgbModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAFgM81Qz-SwfTzUsr4F51AgDj0HdN88CQ'
+    }),
+    AgmDirectionModule
   ],               
   providers: [],
   bootstrap: [AppComponent]

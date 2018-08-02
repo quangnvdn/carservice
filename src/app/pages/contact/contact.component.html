@@ -1,31 +1,16 @@
-<h1>My First Google Map</h1>
+<h1>Bản đồ</h1>
 
-<div id="map" style="width:100%;height:400px;"></div>
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
 
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<section class="section">
-    <div class="container">
-      <div class="row"> 
-        <!-- Contact form -->
-        <section id="contact-form">
-          <div class="col-md-8">
-            <div class="title_dich_vu">Gửi mail cho chúng tôi</div>
-            <form class="clearfix mt50" role="form" onsubmit="return send_lienhe(this)" method="post" action="#" name="frmContact" id="frmContact">
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+          <div class="title_dich_vu">Gửi mail cho chúng tôi</div><br>
+          <form class="clearfix mt50" role="form" onsubmit="return send_lienhe(this)" method="post" action="#" name="frmContact" id="frmContact">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -49,25 +34,23 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 <textarea name="message" rows="9" id="message" class="form-control"></textarea>
               </div>
               <div class="form-group">
-                <label><span class="required">*</span> Captcha</label>		  
-                    <img src="/z_modules/random_image.php" style="margin-bottom:5px">
+                <label><span class="required">*</span> Captcha </label>		  
+                    <img src="http://www.hoangtrangdanang.com/z_modules/random_image.php" style="margin-bottom:5px">
                     <input name="ma_xac_nhan" type="text" id="ma_xac_nhan" value="" class="form-control" onchange="check_mxn()">
                 <div id="load_ma_xac_nhan"><input type="hidden" name="check_ma_xac_nhan" id="check_ma_xac_nhan"></div>
               </div>
               <button type="submit" class="btn btn-success">GỞI</button>
             </form>
-          </div>
-        </section>
-        <!-- Contact details -->
-        <section class="contact-details">
-          <div class="col-md-4">
-            <div class="title_dich_vu">Liên hệ</div>
-            <span style="font-size:16px"><span style="color:rgb(102, 153, 0)"><strong>GARA Ô TÔ HOÀNG TRANG</strong></span></span><br>
-    <br>
-    <span style="font-size:14px">♦&nbsp;Địa chỉ: Lô 1260-1261-1262 Xô Viết Nghệ Tĩnh, Phường Hòa Cường Nam, Quận Hải Châu, TP. Đà Nẵng<br>
-    ♦&nbsp;Điện thoại: 0905 312 333 - 0945 312 333<br>
-    ♦&nbsp;Email: hoangtrang.danang@gmail.com</span>      </div>
-        </section>
+      </div>
+      <div class="col-md-4">
+          <div class="title_dich_vu">Liên hệ</div><br>
+          <span style="font-size:16px"><span style="color:rgb(102, 153, 0)"><strong>GARA Ô TÔ HOÀNG TRANG</strong></span></span><br>
+          <br>
+          <span style="font-size:14px">♦&nbsp;Địa chỉ: Lô 1260-1261-1262 Xô Viết Nghệ Tĩnh, Phường Hòa Cường Nam, Quận Hải Châu, TP. Đà Nẵng<br>
+          ♦&nbsp;Điện thoại: 0905 312 333 - 0945 312 333<br>
+          ♦&nbsp;Email: hoangtrang.danang@gmail.com</span> 
       </div>
     </div>
-    </section>
+
+  </div>
+</section>

@@ -337,7 +337,7 @@
    .main{
        margin-top:130px;
    }
-   .lined-heading {
+   /* .lined-heading {
        position: relative;
        text-align: center;
        display: block;
@@ -362,10 +362,14 @@
        z-index: 1;
        padding: 0 20px;
        display: inline-block;
+   } */
+
+   .lined-heading{
+       
    }
    .khung_top_about{
         background-color: #009F3B;
-       margin: 5px;
+ 
        padding:30px 20px 40px 30px;
    }
    .about{
@@ -383,9 +387,12 @@
    }
    .title_top_about{
 
-       font-size:22px;
-       color:#fff;
-       text-transform:uppercase;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 8px;
+  
+    position: absolute;
+    margin-left: 76px;
    }
    .gt_home{
        text-align:justify;
